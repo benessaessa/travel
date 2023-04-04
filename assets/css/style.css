@@ -1,0 +1,335 @@
+body{
+    font-family: 'Cairo', sans-serif;
+}
+.formGroup{
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.3rem 0.5rem;
+    border-radius: 25px;
+}
+/* .customHeader{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+} */
+.customHeader .navbar-nav .nav-item .nav-link{
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.customHeader .navbar-nav .nav-item .nav-link:hover{
+    color: #0b405e;
+    font-weight: bold;
+}
+.activeHeader{
+    background-color: white;
+    border-bottom: 1px solid #ededed;
+}
+.activeHeader .navbar-nav .nav-item .nav-link{
+    color: #052d41;
+}
+.offcanvas-body li a{
+    color: #0b405e;
+}
+.dropHeader .dropdown-item:hover{
+    background-color: #ffb62e;
+}
+.cooseBtn{
+    background-color: #fe8d00;
+    border-radius: 0px;
+    color: white;
+    height: 42px;
+    font-size: 14px;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+.cooseBtn:hover{
+    box-shadow: inset 144px 0 0 0 #000000;
+    color: #fff;
+}
+/* ==================================================================== */
+
+/* ================================================ First Section ================ */
+.firstSection{
+    background: url("../images/home_bg_new.webp") no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 80vh;
+}
+.btnDiscover{
+    background-color: #09415d;
+    color: white;
+    height: 45px;
+    border-radius: 25px;
+}
+.btnDiscover:hover{
+    background-color: #052d41;
+    color: white;
+}
+.overlaySection{
+    background: hsl(210 4% 10% / .2);
+    min-height: 80vh;
+}
+.cardFirst{
+    background-color: #1e1f22;
+    color: white;
+}
+.pagination-container{
+    display: flex;
+      position: relative;
+      flex-direction: row-reverse;
+       justify-content: space-between;
+  }
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.theBest   ul:after,
+.theBest   ul:before,
+.theBest  ul *::before,
+.theBest  ul *::after,
+section ul li *::after,
+section ul li *::before
+
+{
+    background-image: none !important;
+    content: none !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: -49px;
+}
+.theBest .swiper-button-prev{
+    border-radius: 50%;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    background-color: #fe8d00;
+    color: white
+}
+.theBest .swiper-button-next{
+    border-radius: 50%;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    background-color: #fe8d00;
+}
+.theBest .swiper-button-prev.swiper-button-disabled,.theBest .swiper-button-next.swiper-button-disabled {
+    background-color: rgb(79 105 255 / .2);
+}
+.theBest .swiper-slide{
+    opacity: 0.5;
+}
+.theBest .swiper-slide.swiper-slide-active {
+    transform: scaleY(1.1);
+    /* background: #fc0; */
+    opacity: 1;
+}
+/* ========================= images section ==============*/
+.imagesSection{
+    background: url(../images/bgCompare.png);
+}
+.blackBlue{
+    background: url(../images/blackbg.jpg);
+}
+.imgLab{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.imgExtraSmall{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    height: 170px;
+}
+.imgSmall{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    height: 220px;
+}
+.imgTall{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    height: 440px;
+}
+.btnView{
+    display: none;
+}
+.sectionDisplay{
+    cursor: pointer;
+}
+.tooltips {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltips .tooltiptexts {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tooltips:hover .tooltiptexts {
+    visibility: visible;
+}
+.imgTravel img{
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    transition: width 1s linear;
+}
+.imgTravel:hover img{
+    width: 150%;
+}
+.imgTravel:hover{
+    cursor: pointer;
+}
+.info{
+    background:linear-gradient(to bottom,transparent,#000);
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    display: block;
+    padding: 25px 20px 5px;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+}
+.info .fa{
+    font-size: 10px;
+}
+.score{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 9
+}
+.score strong ,.rate{
+    background-color: #0054a6;
+    color: #fff;
+    line-height: 1;
+    padding: 0.1rem 0.6rem;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.line span{
+    width: 120px;
+    height: 2px;
+    background-color: #e1e1e1;
+    display: block;
+}
+.line em{
+    width: 60px;
+    height: 2px;
+    background-color: #fc5b62;
+    display: block;
+}
+.textView{
+    color: #fc5b62;
+    text-decoration: none;
+}
+.textView:hover{
+    color: #000;
+}
+.maxHeight{
+    height: 250px;
+}
+.imgTravel .imgNew{
+    height: 230px;
+}
+.cardRight{
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 1rem;
+    right: 1rem;
+    background-color: #131313;
+    width: 40px;
+    color: white;
+}
+.btnAppear{
+    display: none;
+    margin-top: 1rem;
+}
+.imgTravel:hover .cardRight{
+    display: block;
+}
+.imgTravel:hover .btnAppear{
+    transition: top 1s linear;
+    display: block;
+}
+.cardRight p a{
+    color: white;
+}
+.newMaxHeight{
+    height: 400px;
+}
+/* ==================== */
+.imgInnerSlide{
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+/* ========================== Blogs ================= */
+.blogCard .btnMore{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.blogCard .btnMore:hover{
+    background: #0b405e;
+    color: #fff;
+}
+.blogCard{
+    transition: all 0.5s ease-in-out;
+}
+.blogCard:hover{
+    /* margin-top: -1rem; */
+    transform: translateY(-10px);
+}
+.blogCard .textWrap{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* ========================= Footer ===================== */
+.footer{
+    padding-top: 3rem;
+}
+.footer p {
+    color: #0b405e;
+    font-size: 14px;
+}
+.footer p a{
+    color: #0b405e;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.footer p a:hover{
+    color: rgb(63, 52, 52); 
+}
+.footer .footText .textRed{
+    color: #ee0605;
+}
+@media screen and (max-width:500px) {
+    .imgTravel img{
+        height: 180px;
+    }
+    .theBest .swiper-button-next{
+        right: 10px;
+    }
+    .firstSection , .firstSection .overlaySection{
+        height: auto;
+    }
+}

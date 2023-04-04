@@ -1,0 +1,144 @@
+.bgInfo{
+  background-color: #0a8db1;
+}
+.textRed{
+  color: red;
+}
+.bgDark{
+  background-color: #212121;
+}
+.badge{
+  position: absolute;
+  left: 17px;
+  font-size: 8px;
+  border-radius: 20px;
+  top: 2px;
+}
+.badgeRed{
+  background-color: #f30c13;
+  color: white;
+}
+.sectionDark{
+  background-color: #131313;
+}
+.sectionLight{
+  background-color: #e7e7e7;
+}
+.bgInfo .alert-dismissible .btn-close{
+  right: unset;
+  left: 0;
+}
+.font-size-12{
+  font-size: 12px;
+}
+.font-size-13{
+  font-size: 13px;
+}
+.font-size-14{
+  font-size: 14px;
+}
+.font-size-15{
+  font-size: 15px;
+}
+.font-size-16{
+  font-size: 16px;
+}
+.font-size-17{
+  font-size: 17px;
+}
+.font-size-18{
+  font-size: 18px;
+}
+.height-42{
+  height: 42px;
+}
+.height-45{
+  height: 45px;
+}
+.height-50{
+  height: 50px;
+}
+.textOrange{
+  color: #fff900;
+}
+.btnOrange,.btnOrder {
+  background-color: #fe8d00;
+  color: white;
+  font-size: 14px;
+  height: 40px;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  border: none;
+}
+.btnOrange:hover {
+  box-shadow: inset 160px 0 0 0 #000000;
+  color: #fff;
+}
+.btnOrder:hover{
+  background-color: #ff5e00;
+  color: #fff;
+}
+.btnRegister {
+  background-color: #eb9225;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  height: 45px;
+}
+.btnRegister:hover {
+  background-color: #e2a520f3;
+  color: #fff;
+}
+.btnDanger{
+  border: 2px solid #f30c13;
+  border-radius: 15px;
+  color: white;
+  padding: 0.6rem 1.5rem;
+}
+.btnDanger:hover{
+  background-color: #f30c13;
+  color: white;
+}
+.btnDangerNew{
+  border: 2px solid #f30c13;
+  border-radius: 15px;
+  background-color: #f30c13;
+  color: white;
+  padding: 0.6rem 1.5rem;
+}
+.btnDangerNew:hover{
+  background-color: #cf070d;
+  color: white;
+}
+.textDanger{
+  color: rgb(255, 4, 0);
+}
+.btnLogin {
+  background-color: rgb(255, 4, 0);
+  color: white;
+  border-radius: 0px;
+  font-size: 14px;
+  border: 1px solid #eb2027;
+  height: 42px;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.btnLogin:hover {
+  box-shadow: inset 150px 0 0 0 #e90417d2;
+  color: #fff;
+  border: 1px solid #eb2027;
+}
+.btnRadius{
+  border-radius: 25px;
+}
+/* .btnCreate{
+  background-color: #eb2027;
+  color: white;
+}
+.btnCreate:hover{
+  background-color: white;
+  color: #eb2027;
+  border: none;
+} */
