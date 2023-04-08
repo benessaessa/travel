@@ -451,6 +451,8 @@ img.thumb_visit {
     .firstSection, .firstSection .overlaySection{
         height: auto;
     }
+}
+@media screen and (max-width: 991px){
     .cardInquire .sticky-lg-top{
         top: 30px;
     }
