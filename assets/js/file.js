@@ -33,20 +33,19 @@
 var swiper1 = new Swiper('.theBest .swiper-container', {
     spaceBetween: 1,
     slidesPerView: 3,
-    centeredSlides: true,
-    roundLengths: true,
+    // centeredSlides: true,
+    // freeMode: true,
+    // roundLengths: true,
     // loop: true,
     loopAdditionalSlides: 30,
-    
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     autoplay: {
-        delay: 6000
+      delay: 6000
     },
-    navigation: {
-        nextEl: '.theBest .swiper-button-next',
-        prevEl: '.theBest .swiper-button-prev',
-        el: '.theBest .pagination-container',
-        clickable: true,
-    },
+ 
     breakpoints: {
         300: {
             mousewheel: true,
@@ -57,33 +56,23 @@ var swiper1 = new Swiper('.theBest .swiper-container', {
             allowSlideNext: true,
             loopedSlides: 1,
         },
-        400: {
-            slidesPerView: 2,
-            spaceBetween: 24,
-            allowSlidePrev: true,
-            allowSlideNext: true,
-            loopedSlides: 1,
-        },
         640: {
             slidesPerView: 2,
             spaceBetween: 30,
             loopedSlides: 1,
-            allowSlidePrev: true,
-            allowSlideNext: true
         },
         1200: {
             slidesPerView: 3,
             spaceBetween: 30,
             loopedSlides: 3,
+        },
+        1600: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loopedSlides: 3,
         }
     },
 });
-// $(window).resize(function () {
-//     swiper3.update();
-// });
-// $(window).on('load', function () {
-//     swiper3.update();
-// });
 $(document).ready(function(){
   $(".sectionDisplay").mouseover(function(){
     $(".sectionDisplay").stop().animate({
