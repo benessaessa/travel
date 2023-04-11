@@ -65,7 +65,7 @@
                 </ul>
                 <ul class="navbar-nav iconSocial ms-auto pe-3">
                     <li class="nav-item">
-                        <a href="" class="nav-link px-3 ms-2"><i class="fa fa-whatsapp"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=201114205243" class="nav-link px-3 ms-2"><i class="fa fa-whatsapp"></i></a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link px-3 ms-2"><i class="fa fa-facebook"></i></a>
@@ -94,6 +94,7 @@
                     <li class="list-group-item border-light"><a class=" text-decoration-none" href="#">Discover Egypt</a></li>
                     <li class="list-group-item border-light"><a class=" text-decoration-none" href="#">Blog</a></li>
                     <li class="list-group-item border-light"><a class=" text-decoration-none" href="tel:+201114205243"><i class="fa fa-mobile me-2"></i> Tel  : +201114205243 </a></li>
+                    <li class="list-group-item border-light"><a href="https://api.whatsapp.com/send?phone=201114205243" target="_blank" class=" text-decoration-none"><i class="fa fa-whatsapp me-2"></i>+201114205243 </a></li>
                     <!-- <li class="list-group-item border-light"><a class=" text-decoration-none" href="#">About Us</a></li> -->
                     <!-- <li class="list-group-item border-light"><a class=" text-decoration-none" href="#">Contact Us</a></li> -->
                 </ul>
@@ -108,11 +109,92 @@
                     <h1 class="pt-5 text-white fw-bold">Tailor-made Tours With The Best Locals Ever!</h1>
                     <h5 class="text-white pt-1">Confused? want to tailor package? Enquire here in 1 min.</h5>
                     <div class="d-md-flex justify-content-center pt-4">
-                        <p>
+                        <!-- <p>
                             <a href="inquire.html" class="btn btnRegister px-5 pt-2">Inquire Now</a>
-                        </p>
+                        </p> -->
+                        <div class="dropdown dropdownContact">
+                            <button class="btn btnRegister px-5 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Contact
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li>
+                                <button class="btn w-100 dropdown-item shadow-none" data-bs-toggle="modal" data-bs-target="#inquire"><i class="fa fa-calendar-alt pe-2"></i> Enquire Form</button>
+                              </li>
+                              <li>
+                                <a href="https://api.whatsapp.com/send?phone=201114205243" class="dropdown-item"><i class="fa fa-whatsapp pe-2"></i> (+20) 1114205243 </a>
+                              </li>
+                              <li>
+                                <a href="tel:01114205243" target="_blank" class="dropdown-item"><i class="fa fa-phone pe-2"></i> (+20) 1114205243 </a>
+                              </li>
+                              <li>
+                                <a href="mailto:moh.essa2020@gmail.com" class="dropdown-item"><i class="fa fa-envelope pe-2"></i> moh.essa2020@gmail.com </a>
+                              </li>
+                            </ul>
+                        </div>
                         <p class="text-white pt-md-2 px-2">Or</p>
-                        <p><a href="#" class="btn btnDiscover pt-2 px-5">Discover Travel Packages</a></p>
+                        <p><a href="#popular_hotels" class="btn btnDiscover pt-2 px-5">Discover Travel Packages</a></p>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="inquire" tabindex="-1" aria-labelledby="inquireLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="inquireLabel">Inquire Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pb-0">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="name" required placeholder="John">
+                                            <label for="name">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="email" required placeholder="name@example.com">
+                                            <label for="email">Email address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="tel" class="form-control" id="phone" required placeholder="name@example.com">
+                                            <label for="phone">Phone Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="date" class="form-control" id="date" required placeholder="name@example.com">
+                                            <label for="date">Travel Date</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" id="floatingSelect" required aria-label="Floating label select example">
+                                              <option selected>select</option>
+                                              <option value="1">Egypt</option>
+                                              <option value="2">England</option>
+                                              <option value="3">America</option>
+                                            </select>
+                                            <label for="floatingSelect">Country</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                            <label for="floatingTextarea2">Comments</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="py-3 text-end">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary px-4">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="row pt-5 pb-3">
@@ -159,7 +241,7 @@
                                 <div class="">
                                     <div class="position-relative pt-4 blogCard">
                                         <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
-                                            <a href="#"><img class="card-img imgExtraSmall" src="assets/images/tour_1.jpg"></a>
+                                            <a href="details.html"><img class="card-img imgExtraSmall" src="assets/images/tour_1.jpg"></a>
                                             <div class="card-body">
                                                 <h6 class="fw-bold">Arc Triomphe</h6>
                                                 <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
@@ -187,7 +269,7 @@
                                 <div class="">
                                     <div class="position-relative pt-4 blogCard">
                                         <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
-                                            <a href="#"><img class="card-img imgExtraSmall" src="assets/images/tour_2.jpg"></a>
+                                            <a href="details.html"><img class="card-img imgExtraSmall" src="assets/images/tour_2.jpg"></a>
                                             <div class="card-body">
                                                 <h6 class="fw-bold">Arc Triomphe</h6>
                                                 <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
@@ -215,7 +297,7 @@
                                 <div class="">
                                     <div class="position-relative pt-4 blogCard">
                                         <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
-                                            <a href="#"><img class="card-img imgExtraSmall" src="assets/images/tour_3.jpg"></a>
+                                            <a href="details.html"><img class="card-img imgExtraSmall" src="assets/images/tour_3.jpg"></a>
                                             <div class="card-body">
                                                 <h6 class="fw-bold">Arc Triomphe</h6>
                                                 <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
@@ -243,7 +325,7 @@
                                 <div class="">
                                     <div class="position-relative pt-4 blogCard">
                                         <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
-                                            <a href="#"><img class="card-img imgExtraSmall" src="assets/images/tour_1.jpg"></a>
+                                            <a href="details.html"><img class="card-img imgExtraSmall" src="assets/images/tour_1.jpg"></a>
                                             <div class="card-body">
                                                 <h6 class="fw-bold">Arc Triomphe</h6>
                                                 <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
@@ -271,7 +353,7 @@
                                 <div class="">
                                     <div class="position-relative pt-4 blogCard">
                                         <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
-                                            <a href="#"><img class="card-img imgExtraSmall" src="assets/images/tour_2.jpg"></a>
+                                            <a href="details.html"><img class="card-img imgExtraSmall" src="assets/images/tour_2.jpg"></a>
                                             <div class="card-body">
                                                 <h6 class="fw-bold">Arc Triomphe</h6>
                                                 <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
@@ -306,7 +388,7 @@
                 </p> -->
             </div>
         </div>
-        <div class="container py-4">
+        <div class="container py-4" id="popular_hotels">
             <div class="line">
                 <span><em></em></span>
             </div>

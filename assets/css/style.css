@@ -68,6 +68,28 @@ body{
     width: 100%;
     min-height: 80vh;
 }
+.dropdownContact .dropdown-menu{
+    background-color: unset;
+    border:none;
+}
+.dropdownContact .dropdown-menu .dropdown-item{
+    background-color: #fab22c;
+    margin-bottom: 0.2rem;
+    color: white;
+    padding: 0.5rem;
+}
+.dropdownContact .dropdown-menu .dropdown-item:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+/* .btnInquire{
+    background-color: #fe8d00;
+    color: white;
+    width: 150px;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 25px;
+} */
 .tourDetails{
     background: url("../images/tours_detail.jpg") no-repeat;
     background-size: cover;
