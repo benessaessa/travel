@@ -242,8 +242,15 @@ section ul li *::before
     object-fit: cover;
     transition: width 1s linear;
 }
+.blogCard .card-img{
+    transition: all 0.5s ease-in-out;
+    width: 110%;
+}
 .imgTravel:hover img{
     width: 150%;
+}
+.imgTravel:hover, .blogCard .card-img:hover{
+    width: 100%;
 }
 .imgTravel:hover{
     cursor: pointer;
@@ -346,6 +353,7 @@ section ul li *::before
 }
 .blogCard{
     transition: all 0.5s ease-in-out;
+    overflow: hidden;
 }
 .blogCard:hover{
     /* margin-top: -1rem; */
