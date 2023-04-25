@@ -93,42 +93,54 @@ $(document).ready(function(){
 var locations = [
   [
     `
-    <div class="card mb-3 cardMap">
-      <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
+    <div class="card  cardMap">
+      <a href="details.html">
+        <img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg">
+      </a>
       <div class="card-body">
-          <h6 class="fw-bold">Arc Triomphe</h6>
-          <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
-          <a href="tel:+201114205243" class="opacity-75 text-black text-decoration-none mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
+          <h6 class="fw-bold">Welcome 1</h6>
+          <h6 class="text-opacity-25 text-muted font-size-12 pb-2"><i>Italian Food</i></h6>
+          
+          <a href="#" class="opacity-75 d-block pb-2 text-decoration-none font-size-14 fw-bold mb-0 text-primary"><i class="fa fa-compass fa-lg pe-1"></i> Git Directions </a>
+          <a href="tel:+201114205243" class="opacity-75 text-decoration-none font-size-14 fw-bold text-success mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
       </div>
     </div>
   `,
     -33.890542,
     151.274856,
-    4,
+    1,
   ],
   [
     `
-    <div class="card mb-3 cardMap">
-      <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
+    <div class="card  cardMap">
+      <a href="details.html">
+        <img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg">
+      </a>
       <div class="card-body">
-          <h6 class="fw-bold">Arc Triomphe</h6>
-          <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
-          <a href="tel:+201114205243" class="opacity-75 text-black text-decoration-none mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
+          <h6 class="fw-bold">Welcome 2</h6>
+          <h6 class="text-opacity-25 text-muted font-size-12 pb-2"><i>Italian Food</i></h6>
+          
+          <a href="#" class="opacity-75 d-block pb-2 text-decoration-none font-size-14 fw-bold mb-0 text-primary"><i class="fa fa-compass fa-lg pe-1"></i> Git Directions </a>
+          <a href="tel:+201114205243" class="opacity-75 text-decoration-none font-size-14 fw-bold text-success mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
       </div>
     </div>
   `,
     -33.923036,
     151.259052,
-    5,
+    2,
   ],
   [
     `
-    <div class="card mb-3 cardMap">
-      <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
+    <div class="card  cardMap">
+      <a href="details.html">
+        <img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg">
+      </a>
       <div class="card-body">
-          <h6 class="fw-bold">Test Map</h6>
-          <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
-          <a href="tel:+201114205243" class="opacity-75 text-black text-decoration-none mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
+          <h6 class="fw-bold">Welcome 3</h6>
+          <h6 class="text-opacity-25 text-muted font-size-12 pb-2"><i>Italian Food</i></h6>
+          
+          <a href="#" class="opacity-75 d-block pb-2 text-decoration-none font-size-14 fw-bold mb-0 text-primary"><i class="fa fa-compass fa-lg pe-1"></i> Git Directions </a>
+          <a href="tel:+201114205243" class="opacity-75 text-decoration-none font-size-14 fw-bold text-success mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
       </div>
     </div>
     `,
@@ -138,33 +150,41 @@ var locations = [
   ],
   [
     `
-    <div class="card mb-3 cardMap">
-      <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
+    <div class="card  cardMap">
+      <a href="details.html">
+        <img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg">
+      </a>
       <div class="card-body">
-          <h6 class="fw-bold">Arc Triomphe</h6>
-          <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
-          <a href="tel:+201114205243" class="opacity-75 text-black text-decoration-none mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
+          <h6 class="fw-bold">Welcome 4</h6>
+          <h6 class="text-opacity-25 text-muted font-size-12 pb-2"><i>Italian Food</i></h6>
+          
+          <a href="#" class="opacity-75 d-block pb-2 text-decoration-none font-size-14 fw-bold mb-0 text-primary"><i class="fa fa-compass fa-lg pe-1"></i> Git Directions </a>
+          <a href="tel:+201114205243" class="opacity-75 text-decoration-none font-size-14 fw-bold text-success mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
       </div>
     </div>
     `,
     -33.80010128657071,
     151.28747820854187,
-    2,
+    4,
   ],
   [
     ` 
-    <div class="card mb-3 cardMap">
-      <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
+    <div class="card  cardMap">
+      <a href="details.html">
+        <img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg">
+      </a>
       <div class="card-body">
-          <h6 class="fw-bold">Arc Triomphe</h6>
-          <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
-          <a href="tel:+201114205243" class="opacity-75 text-black text-decoration-none mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
+          <h6 class="fw-bold">Welcome 5</h6>
+          <h6 class="text-opacity-25 text-muted font-size-12 pb-2"><i>Italian Food</i></h6>
+          
+          <a href="#" class="opacity-75 d-block pb-2 text-decoration-none font-size-14 fw-bold mb-0 text-primary"><i class="fa fa-compass fa-lg pe-1"></i> Git Directions </a>
+          <a href="tel:+201114205243" class="opacity-75 text-decoration-none font-size-14 fw-bold text-success mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
       </div>
     </div>
     `,
     -33.950198,
     151.259302,
-    1,
+    5,
   ],
 ];
 
@@ -199,7 +219,7 @@ var markers=[];
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(-33.950198,151.259302),
       content:  ` 
-      <div class="card mb-3 cardMap">
+      <div class="card  cardMap">
         <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
         <div class="card-body">
             <h6 class="fw-bold">Arc Triomphe</h6>

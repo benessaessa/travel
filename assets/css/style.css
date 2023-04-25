@@ -61,9 +61,14 @@ body{
 }
 /* ==================================================================== */
 .cardMap{
-    width: 320px;
+    width: 270px;
 }
-
+.gm-style-iw-d{
+    max-height: max-content !important;
+}
+.gm-style-iw-c{
+    max-height: max-content !important;
+}
 /* ================================================ First Section ================ */
 .firstSection{
     /* background: url("../images/home_bg_new.webp") no-repeat; */
