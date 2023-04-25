@@ -89,6 +89,130 @@ $(document).ready(function(){
       $(".btnView").css("display","none");
   });
 })
+
+var locations = [
+  [
+    `
+    <div class="card mb-3 cardMap">
+      <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
+      <div class="card-body">
+          <h6 class="fw-bold">Arc Triomphe</h6>
+          <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
+          <a href="tel:+201114205243" class="opacity-75 text-black text-decoration-none mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
+      </div>
+    </div>
+  `,
+    -33.890542,
+    151.274856,
+    4,
+  ],
+  [
+    `
+    <div class="card mb-3 cardMap">
+      <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
+      <div class="card-body">
+          <h6 class="fw-bold">Arc Triomphe</h6>
+          <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
+          <a href="tel:+201114205243" class="opacity-75 text-black text-decoration-none mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
+      </div>
+    </div>
+  `,
+    -33.923036,
+    151.259052,
+    5,
+  ],
+  [
+    `
+    <div class="card mb-3 cardMap">
+      <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
+      <div class="card-body">
+          <h6 class="fw-bold">Test Map</h6>
+          <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
+          <a href="tel:+201114205243" class="opacity-75 text-black text-decoration-none mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
+      </div>
+    </div>
+    `,
+    -34.028249,
+    151.157507,
+    3,
+  ],
+  [
+    `
+    <div class="card mb-3 cardMap">
+      <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
+      <div class="card-body">
+          <h6 class="fw-bold">Arc Triomphe</h6>
+          <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
+          <a href="tel:+201114205243" class="opacity-75 text-black text-decoration-none mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
+      </div>
+    </div>
+    `,
+    -33.80010128657071,
+    151.28747820854187,
+    2,
+  ],
+  [
+    ` 
+    <div class="card mb-3 cardMap">
+      <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
+      <div class="card-body">
+          <h6 class="fw-bold">Arc Triomphe</h6>
+          <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
+          <a href="tel:+201114205243" class="opacity-75 text-black text-decoration-none mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
+      </div>
+    </div>
+    `,
+    -33.950198,
+    151.259302,
+    1,
+  ],
+];
+
+var map = new google.maps.Map(document.getElementById('map'), {
+  zoom: 10,
+  center: new google.maps.LatLng(-33.92, 151.25),
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+});
+
+var infowindow = new google.maps.InfoWindow();
+
+var marker, i;
+var markers=[];
+
+  for (i = 0; i < locations.length; i++) {  
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+      map: map
+    });
+    
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+      return function() {
+        infowindow.setContent(locations[i][0]);
+        infowindow.open(map, marker);
+      }
+    })(marker, i));
+    markers.push(marker);
+  }
+
+  function myClick(id) {
+    console.log(id)
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-33.950198,151.259302),
+      content:  ` 
+      <div class="card mb-3 cardMap">
+        <a href="details.html"><img class="card-img imgExtraSmall imgLeft" src="assets/images/restaurant_1.jpg"></a>
+        <div class="card-body">
+            <h6 class="fw-bold">Arc Triomphe</h6>
+            <p class="textWrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit Egypt is a heavy mass tourism country that receives millions of touris</p>
+            <a href="tel:+201114205243" class="opacity-75 text-black text-decoration-none mb-0"><i class="fa fa-phone-alt pe-1"></i> +2 01114205243</a>
+        </div>
+      </div>
+      `,
+      map: map
+    })
+    google.maps.event.trigger(markers[id], 'click');
+  }
+
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
@@ -125,6 +249,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
 // $(window).on("scroll", function() {
 //     if($(window).scrollTop() > 20) {
 //         $(".customHeader").addClass("bgDark text-dark py-0");
